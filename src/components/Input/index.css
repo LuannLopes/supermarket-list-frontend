@@ -4,10 +4,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   width: 452px;
-  height: 56px;
+  height: 48px;
   border-radius: 8px;
   border: 2px solid #7785DB;
-  /* background-color: #FFF; */
+  margin-bottom: 16px;
 }
 
 .input-label {
@@ -20,7 +20,6 @@
 .input {
   border: 0 transparent;
   margin-left: 6px;
-  font-size: 16px;
   font-family: "Avenir Next";
 }
 

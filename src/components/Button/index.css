@@ -1,13 +1,31 @@
 .button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 42px;
   border-radius: 24px;
-  background-color: #7785DB;
-  color: #FFF;
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
   font-family: "Avenir Next";
-  border: none;
+  border: 1px solid #7785db;
   cursor: pointer;
+}
+
+.main {
+  background-color: #7785db;
+  color: white;
+}
+
+.outline {
+  background-color: #f2f4ff;
+  color: #7785db;
+}
+
+.button-icon {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+  margin-right: 6px;
 }
