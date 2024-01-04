@@ -5,7 +5,6 @@ export const getList = async () => {
     const result = await api.get("/list-items");
     return result.data;
   } catch (error) {
-    console.log(error);
     alert("Error ao buscar dados da API");
     return { error };
   }

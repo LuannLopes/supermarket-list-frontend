@@ -37,15 +37,24 @@ h1 {
   color: #000;
   font-size: 24px;
   font-weight: bold;
-  line-height: 115.023%;
+  line-height: 22px;
 }
 
 h3 {
   font-size: 16px;
-  line-height: 115.023%;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
 }
 
 ::-webkit-scrollbar {

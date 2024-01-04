@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 452px;
+  width: 420px;
   height: 48px;
   border-radius: 8px;
   border: 2px solid #7785DB;
@@ -14,15 +14,28 @@
   font-size: 12px;
   line-height: 16px;
   margin: 0;
-  padding: 6px 0 6px 4px;
+  padding: 6px 0 4px 4px;
 }
 
 .input {
   border: 0 transparent;
   margin-left: 6px;
+  font-size: 16px;
   font-family: "Avenir Next";
 }
 
 .input:focus {
   outline: none;
+}
+
+@media screen and (max-width: 420px) {
+  .input-container {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .input-container {
+    width: 298px;
+  }
 }

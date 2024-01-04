@@ -17,7 +17,7 @@
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  width: 28vw;
+  width: 26vw;
   background-color: #FFF;
   padding: 24px 24px 0 24px;
 }
@@ -46,8 +46,39 @@
 .buttons-container {
   display: flex;
   flex-direction: column;
-  height: 12vh;
+  height: 13vh;
   width: 100%;
   justify-content: space-between;
-  margin-top: 62vh;
+  margin-top: 55vh;
 }
+
+@media screen and (max-width: 830px) {
+  .modal-content {
+    width: 60vw;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  .modal-content {
+    width: 100vw;
+  }
+
+  .buttons-container {
+    height: 14vh;
+    margin-top: 42vh;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .buttons-container {
+    height: 15vh;
+  }
+}
+
+/* @media screen and (min-height: 667px) {
+  .buttons-container {
+    height: 15vh;
+  }
+} */
