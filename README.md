@@ -18,7 +18,7 @@
   <div style="display: flex;   flex-direction: column;
   align-items: center;">
   <h1 align="center" style="display: flex; flex-direction:row;">
-      <img   style="margin: 0 10px;" alt="supermarket-list-app.gif" src="public/images/demo.gif" />
+      <img   style="margin: 0 10px;" alt="supermarket-list-app.gif" src="public/images/demo-sml.gif" />
   </h1>
   </div>
 
