@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-  <a href="#result">Result.</a>
+  <a href="#result">Result.</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#about-the-project">About the project.</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#live-application">Live application.</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#technologies">Technologies.</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -13,7 +13,7 @@
   <a href="#running-instructions">Running Instructions</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-## Result.
+## Result:
 
   <div style="display: flex;   flex-direction: column;
   align-items: center;">
@@ -22,7 +22,7 @@
   </h1>
   </div>
 
-## About the project.
+## About the project:
 
 This is an application build using React.js, with the goal of make easier create supermarket lists.
 <br>
@@ -31,7 +31,7 @@ This is an application build using React.js, with the goal of make easier create
 
 https://luannlopes.github.io/wallet-app-frontend/ -->
 
-## Technologies.
+## Technologies:
 
 This application was developed with the following technologies:
 
@@ -48,7 +48,7 @@ This application was developed with the following technologies:
 1. Clone the project:
 
 ```
- git clone https://github.com/LuannLopes/supermarket-list-fronted.git
+ git clone https://github.com/LuannLopes/supermarket-list-frontend.git
 ```
 
 2. Install the dependencies:
