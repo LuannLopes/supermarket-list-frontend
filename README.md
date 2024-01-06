@@ -25,11 +25,11 @@
 ## About the project:
 
 This is an application build using React.js, with the goal of make easier create supermarket lists.
-<br>
+<be>
 
-<!-- ## Live application.
+## Live application:
 
-https://luannlopes.github.io/wallet-app-frontend/ -->
+https://supermarket-list-frontend-navy.vercel.app/
 
 ## Technologies:
 
