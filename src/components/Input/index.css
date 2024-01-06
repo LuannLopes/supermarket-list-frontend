@@ -6,7 +6,7 @@
   width: 420px;
   height: 48px;
   border-radius: 8px;
-  border: 2px solid #7785DB;
+  border: 2px solid #7785db;
   margin-bottom: 16px;
 }
 
@@ -21,7 +21,7 @@
   border: 0 transparent;
   margin-left: 6px;
   font-size: 16px;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
 }
 
 .input:focus {

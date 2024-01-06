@@ -18,7 +18,7 @@
   align-items: center;
   height: 100vh;
   width: 26vw;
-  background-color: #FFF;
+  background-color: #fff;
   padding: 24px 24px 0 24px;
 }
 
@@ -34,7 +34,7 @@
 .modal-close-button {
   width: 24px;
   height: 24px;
-  background-image: url("../../../public/images/close.svg");
+  background-image: url('../../../public/images/close.svg');
   background-color: transparent;
   background-position: center;
   background-size: contain;
@@ -56,7 +56,6 @@
   .modal-content {
     width: 60vw;
   }
-
 }
 
 @media screen and (max-width: 420px) {
