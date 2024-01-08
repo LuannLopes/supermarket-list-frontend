@@ -24,8 +24,7 @@
 
 ## About the project:
 
-This is an application build using React.js, with the goal of make easier create supermarket lists.
-<be>
+This application is built using React.js to make it easier to create supermarket lists.
 
 ## Live application:
 
@@ -36,7 +35,7 @@ https://supermarket-list-frontend-navy.vercel.app/
 This application was developed with the following technologies:
 
 - React.js
-- CSS
+- CSS3
 - Axios
 
 ## Requirements to Run:
@@ -54,17 +53,11 @@ This application was developed with the following technologies:
 2. Install the dependencies:
 
 ```
- cd supermarket-list-frontend && npm install
+ cd supermarket-list-frontend && yarn install
 ```
 
 3. Run the project:
 
 ```
- npm start
-```
-
-4. (Optional) If you want build a production version:
-
-```
-npm build
+ yarn start
 ```
