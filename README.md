@@ -34,9 +34,14 @@ https://supermarket-list-frontend-navy.vercel.app/
 
 This application was developed with the following technologies:
 
-- React.js
-- CSS3
-- Axios
+- React.js;
+- Styled Components;
+- Atomic Design;
+- Eslint/Prettier;
+- Absolute Imports;
+- Git
+- CSS3;
+- Axios;
 
 ## Requirements to Run:
 
@@ -53,11 +58,11 @@ This application was developed with the following technologies:
 2. Install the dependencies:
 
 ```
- cd supermarket-list-frontend && yarn install
+ cd supermarket-list-frontend && npm install
 ```
 
 3. Run the project:
 
 ```
- yarn start
+ npm start
 ```
