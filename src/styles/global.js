@@ -36,33 +36,9 @@ export const GlobalStyle = createGlobalStyle`
     monospace;
   }
 
-  h1 {
-  color: #000;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 22px;
-  }
-
-  h3 {
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-  }
-
   ::-webkit-scrollbar {
   visibility: hidden;
   width: 0;
-  }
-
-  @media (max-width: 420px) {
-    h1 {
-    font-size: 18px;
-    }
-
-    h3 {
-    font-size: 12px;
-    }
   }
 
 `
