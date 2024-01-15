@@ -24,7 +24,7 @@
 
 ## About the project:
 
-This application is built using React.js to make it easier to create supermarket lists.
+This application is built using React.js to make it easier to create supermarket lists. It was used the Atomic Design Concept to organize the components.
 
 ## Live application:
 
@@ -37,10 +37,10 @@ This application was developed with the following technologies:
 - React.js;
 - Styled Components;
 - Atomic Design;
-- Eslint/Prettier;
+- Eslint;
+- Prettier;
 - Absolute Imports;
-- Git
-- CSS3;
+- Git;
 - Axios;
 
 ## Requirements to Run:
