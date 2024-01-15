@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Button, Input, Title, SubTitle } from 'components'
+import { Button, Title, SubTitle } from 'components'
+import { Input } from 'components/molecules/Input'
 import { SAVE_USERNAME_PATH } from 'services/constants'
 import {
   ScreenContainer,

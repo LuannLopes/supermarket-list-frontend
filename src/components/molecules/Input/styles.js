@@ -1,4 +1,6 @@
-.input-container {
+import styled from 'styled-components'
+
+export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -6,36 +8,27 @@
   width: 420px;
   height: 48px;
   border-radius: 8px;
-  border: 2px solid #7785db;
+  border: 2px solid ${({ theme }) => theme.colors.primary};
   margin-bottom: 16px;
-}
 
-.input-label {
+  @media (max-width: 420px) {
+    max-width: 300px;
+  }
+`
+export const InputLabel = styled.label`
   font-size: 12px;
   line-height: 16px;
   margin: 0;
   padding: 6px 0 4px 4px;
-}
+`
 
-.input {
+export const InputText = styled.input`
   border: 0 transparent;
   margin-left: 6px;
   font-size: 16px;
   font-family: 'Avenir Next';
-}
 
-.input:focus {
-  outline: none;
-}
-
-@media screen and (max-width: 420px) {
-  .input-container {
-    max-width: 300px;
+  &:focus {
+    outline: none;
   }
-}
-
-/* @media screen and (min-width: 1024px) {
-  .input-container {
-    width: 298px;
-  }
-} */
+`
