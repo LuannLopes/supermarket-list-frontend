@@ -1,45 +1,29 @@
 import { api } from 'services/api'
 
-export const getList = async () => {
+const handleRequest = async (request, errorMessage) => {
   try {
-    const result = await api.get('/list-items')
+    const result = await request
     return result.data
   } catch (error) {
-    alert('Error ao buscar dados da API')
-    return { error }
+    console.error(errorMessage, error)
+    return { error: errorMessage }
   }
 }
 
-export const createItem = async (item) => {
-  try {
-    const result = await api.post('/list-item', {
-      ...item
-    })
-    return result.data
-  } catch (error) {
-    alert('Error ao salvar novo item')
-    return { error }
-  }
-}
+export const getList = () =>
+  handleRequest(api.get('/list-items'), 'Error ao buscar dados da API')
 
-export const updateItem = async (id, item) => {
-  try {
-    const result = await api.put(`/list-item/${id}`, {
-      ...item
-    })
-    return result.data
-  } catch (error) {
-    alert('Error ao salvar novo item')
-    return { error }
-  }
-}
+export const createItem = (item) =>
+  handleRequest(
+    api.post('/list-item', { ...item }),
+    'Error ao salvar novo item'
+  )
 
-export const deleteItem = async (id) => {
-  try {
-    const result = await api.delete(`/list-item/${id}`)
-    return result.data
-  } catch (error) {
-    alert('Error ao deletar item')
-    return { error }
-  }
-}
+export const updateItem = (id, item) =>
+  handleRequest(
+    api.put(`/list-item/${id}`, { ...item }),
+    'Error ao atualizar o item'
+  )
+
+export const deleteItem = (id) =>
+  handleRequest(api.delete(`/list-item/${id}`), 'Error ao deletar item')
