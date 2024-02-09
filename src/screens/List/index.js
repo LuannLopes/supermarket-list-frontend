@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { getList, updateItem } from 'services/request'
 import { Button, ListRender, Loader, Modal, Title } from 'components'
 import {
@@ -16,11 +16,15 @@ export const ListScreen = () => {
   const [loading, setLoading] = useState(true)
   const [listData, setListData] = useState([])
   const [selectedItem, setSelectedItem] = useState(null)
+
   const loadListItems = async () => {
-    setLoading(true)
-    const result = await getList()
-    setListData(result)
-    setLoading(false)
+    try {
+      setLoading(true)
+      const result = await getList()
+      setListData(result)
+    } finally {
+      setLoading(false)
+    }
   }
 
   useEffect(() => {
@@ -44,14 +48,17 @@ export const ListScreen = () => {
   }
 
   const onCheckItem = async (item) => {
-    const result = await updateItem(item?._id, {
+    const updatedItem = {
       name: item.name,
       quantity: Number(item.quantity),
       checked: !item.checked
-    })
+    }
 
-    if (!result.error) {
+    try {
+      await updateItem(item?._id, updatedItem)
       await loadListItems()
+    } catch (error) {
+      console.error('Erro ao atualizar item:', error)
     }
   }
 
