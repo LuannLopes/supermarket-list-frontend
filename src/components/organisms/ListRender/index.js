@@ -13,14 +13,15 @@ export const ListRender = ({ list, onEdit, onCheckItem }) => {
 
   return (
     <ListRenderContainer>
-      {list.map((item) => (
-        <ListCard
-          onCheckItem={onCheckItem}
-          onClick={onEdit}
-          item={item}
-          key={item?._id}
-        />
-      ))}
+      {list &&
+        list.map((item) => (
+          <ListCard
+            onCheckItem={onCheckItem}
+            onClick={onEdit}
+            item={item}
+            key={item?._id}
+          />
+        ))}
     </ListRenderContainer>
   )
 }
